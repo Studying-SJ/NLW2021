@@ -26,23 +26,23 @@
                 Esse é um texto substituto ao do Maikito
             </p>
 
-            <ul>
-                <li>
+            <ul id="socialLinks">
+                <li class="youtube">
                     <a href="youtube.com.br" target="_blank">
                         <img src="img/youtube.svg" alt="">
                     </a>
                 </li>
-                <li>
+                <li class="facebook">
                     <a href="youtube.com.br" target="_blank">
                         <img src="img/facebook.svg" alt="">
                     </a>
                 </li>
-                <li>
+                <li class="instagram">
                     <a href="youtube.com.br" target="_blank">
                         <img src="img/instagram.svg" alt="">
                     </a>
                 </li>
-                <li>
+                <li class="twitter">
                     <a href="youtube.com.br" target="_blank">
                         <img src="img/twitter.svg" alt="">
                     </a>
@@ -51,6 +51,26 @@
             </ul>
         </div>
     </main>
+    <script >
+       
+        const LinksSocialMedia = { //Objeto que guarda as informações das redes socias (Endpoints da conta)
+        github: 'samuel-jesus',
+        youtube: 'youtube',
+        facebook: 'samuelJesus',
+        instagram: 'samwel.jesus',
+        twitter: 'twitter'
+      }
+      
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+
+          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+
+        }
+      }
+      changeSocialMediaLinks()
+    </script>
 </body>
 
 </html>
