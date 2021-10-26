@@ -54,6 +54,9 @@ a{
 p{
     margin-top: 2rem;
 }
+.text-just{
+    text-align: justify;
+}
 ul{
     margin-top: 4rem;
     list-style: none;

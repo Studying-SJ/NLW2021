@@ -14,15 +14,15 @@
                 <span>
                     <img src="img/selo.svg" alt="selo Rocketseat">    
                 </span>
-                <img src="https://lorempixel.com/185/185/people" alt="Perfil foto">
+                <img src="https://lorempixel.com/185/185/people" alt="Perfil foto" id="userPhoto">
             </div>
-            <h1>Samuel Jesus</h1>
-            <a href="">
+            <h1 id="userName">Sem nome</h1>
+            <a id="userLink" href="">
                 <img src="img/github 2.svg" alt="Icon">
-                @Insta
+                <span>@</span> <span id="userLogin"></span> 
             </a>
             
-            <p>
+            <p id="userBio" class="text-just"> 
                 Esse é um texto substituto ao do Maikito
             </p>
 
@@ -51,26 +51,7 @@
             </ul>
         </div>
     </main>
-    <script >
-       
-        const LinksSocialMedia = { //Objeto que guarda as informações das redes socias (Endpoints da conta)
-        github: 'samuel-jesus',
-        youtube: 'youtube',
-        facebook: 'samuelJesus',
-        instagram: 'samwel.jesus',
-        twitter: 'twitter'
-      }
-      
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
-
-        }
-      }
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
