@@ -10,7 +10,7 @@ const LinksSocialMedia = { //Objeto que guarda as informações das redes socias
     for (let li of socialLinks.children) {
       const social = li.getAttribute('class')
 
-      console.log(li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`)
+     li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
     }
   }
 
