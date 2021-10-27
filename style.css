@@ -10,12 +10,15 @@ body{
 body{
     display: grid;
     place-items: center;
-    background-image: linear-gradient(to left, rgba(242, 9, 98,0.5) ,rgba(242, 63, 9,0.5), rgba(250, 214, 69,0.5));
+    background: url(img/desktop.svg) no-repeat ; 
+    background-color: #121214;
+    /* background-image: linear-gradient(to left, rgba(242, 9, 98,0.5) ,rgba(242, 63, 9,0.5), rgba(250, 214, 69,0.5)); */
 }
 main{
-    background: url(img/background.svg) no-repeat center/cover;
+    background: url(img/background.svg) no-repeat center;
     min-width: 450px;
-    height: 100vh;
+    height: 640px;
+    position: absolute;
 }
 .container{
     max-width: 250px;
@@ -25,7 +28,7 @@ main{
 }
 .avatar{
     width: 10rem;
-    margin: 11.5rem auto 0;
+    margin: 5.5rem auto 0;
     position: relative;
 }
 .avatar span{
@@ -41,10 +44,8 @@ main{
 }
 h1{
     font-size: 1.5rem;
-    margin-top: 1.5rem;
 }
 a{
-    margin-top: .25rem;
     text-decoration: none;
     color:var(--gray);
     display: flex;
@@ -56,19 +57,24 @@ p{
     margin-top: 2rem;
 }
 .text-just{
-    text-align: justify;
+    text-align: center;
 }
 ul{
-    margin-top: 4rem;
+    margin-top: 2rem;
     list-style: none;
     padding: 0;
     display: flex;
     gap: 0.5rem;
     justify-content: center;
 }
-@media only screen and (max-width: 700px)  {
-    main{
-        width: 100vw;
-        height: 100vh;
-    }
+#faixa{
+    top: -120px;
+    left: 180px;
+    position: absolute;
 }
+    @media only screen and (max-width: 700px)  {
+        main{
+            width: 100vw;
+            height: 100vh;
+        }
+    }
